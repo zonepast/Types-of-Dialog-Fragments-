@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aff02.dialogfragment.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/group">
+
+            <Button
+                android:id="@+id/btnshowNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showNormalDialog"
+                android:text="show Normal dialog" />
+
+            <Button
+                android:id="@+id/btnshowList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showListDialog"
+                android:text="show List dialog" />
+
+            <Button
+                android:id="@+id/btnshowmultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showMultipleChoiceDialog"
+                android:text="show Multiple Choice dialog" />
+
+            <Button
+                android:id="@+id/btncustomdialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showcustomdialog"
+                android:text="show custom dialog 1" />
+
+            <Button
+                android:id="@+id/btncustomdialogtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showcustomdialogtwo"
+                android:text="show custom dialog 2" />
+
+            <Button
+                android:id="@+id/btntimepickerdialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showTimePickerDialog"
+                android:text="show time picker dialog 1" />
+
+            <Button
+                android:id="@+id/btndatepickerdialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePickerDialog"
+                android:text="show Date picker dialog 1" />
+
+            <Button
+                android:id="@+id/btnfragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="showasfragment"
+                android:text="Dialog use as Fragment" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
